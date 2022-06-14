@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/CSS/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" crossorigin="anonymous">
+    <title>Login-Register</title>
+</head>
+<body>
+    <main>
+        <div class="contenedor__todo">
+            <div class="btn_volver">
+                <a href="../index.html"><i class="fa-solid fa-circle-arrow-left"></i></a>
+            </div>
+            <div class="caja__trasera">
+
+                <div class="caja__trasera-login">
+                    <h3>¿Ya tienes una cuenta?</h3>
+                    <p>Inicia sesión para entrar en la página</p>
+                    <button id="btn__iniciar-sesion">Iniciar Sesion</button>
+                </div>
+                <div class="caja__trasera-register">
+                    <h3>¿Aún no tienes una cuenta?</h3>
+                    <p>Registrate para iniciar sesión</p>
+                    <button id="btn__registrarse">Registrarse</button>
+                </div>
+            </div>
+            <!--sectionulario de Login y Registro-->
+            <div class="contenedor__login-register">
+                <!--Login-->
+                <section class="formulario__login">
+                    <h2>Iniciar Sesión</h2>
+                    <input type="text" name="usuario" id="usuario-login" placeholder="Ususario">
+                    <input type="password" name="contrasena" id="contraseña-login" placeholder="Contraseña">
+                    <!-- instrucciones -->
+                    <a id="inst-login" style="cursor: pointer;"><p>¿Quíeres leer las instrucciones?</p></a>
+                    <button type="button" id="btn__listo-login">Entrar</button>
+                </section>
+                <!--Registro-->
+                <section class="formulario__register"> <!-- En este sectionulario se enviará el registro del usuario. -->
+                    <h2>Registrarse</h2>
+                    <input type="text" name="nombre" id="nombre-register" placeholder="Nombre">
+                    <input type="text" name="apellido" id="apellido-register" placeholder="Apellido">
+                    <input type="email" name="correo" id="correo-register" placeholder="Correo Electónico">
+                    <input type="text" name="usuario" id="usuario-register" placeholder="Usuario">
+                    <input type="password" name="contrasena" id="contraseña_register" placeholder="Contraseña">
+                    <input type="password" name="contrasena_confirmacion"  id="contraseña_confirm" placeholder="Confirmar Contraseña" >
+                    <input type="checkbox" name="ocultar-contraseña" id="ocultar-contraseña"  style="width: 12px; margin: 7px; margin-left: 10px; margin-right: 7px;" checked>  <small style="color: #4e4e4eb4;">Ocultar Contraseñas</small><br>
+                    <a id="inst-register" style="cursor: pointer;"><p>¿Quíeres leer las instrucciones?</p></a>
+                    <button type="button" id="btn__listo-register">Registrarse</button>
+                </section>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- MODAL ERROR -->
+<div id="myModal" class="modalError" style="display: none">
+    <div class="modal-content">
+        <span id="close" class="close">&times;</span>
+        <p id="text-modal">TEXTO.</p>
+    </div>
+</div>
+
+    <!-- MODAL EXITO -->
+<section class="modal">
+    <div class="modal__container">
+        <img src="./Assets/images/modal.svg" class="modal__img">
+        <h2 class="modal__title">¡Registrado con EXITO!</h2>
+        <p class="modal__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nobis nisi quibusdam doloremque expedita quae ipsam accusamus quisquam quas, culpa tempora. Veniam consectetur deleniti maxime.</p>
+        <a href="#" class="modal__close">Cerrar</a>
+    </div>
+</section>
+<div id="cargando" style="display:none" ><div class="icono"></div></div>
+
+
+
+    <script src="./Assets/JS/Script.js"></script>
+</body>
+</html>
