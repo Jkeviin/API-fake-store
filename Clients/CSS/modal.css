@@ -1,0 +1,166 @@
+
+.modal-container{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: 50% 50% no-repeat rgba(0, 0, 0, 0.653);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.card-wrapper2{
+    background-color: white;
+    max-width: 1200px;
+    margin: 20em auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.product-content2{
+    width: 30em;
+    padding: 2rem 1rem;
+}
+.product-title2{
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    font-weight: 800;
+    position: relative;
+    color: #000000;
+    width: 70%;
+    margin: 1rem 0;
+}
+.product-title2::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 80px;
+    background: #12263a;
+}
+.product-link2{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 0.9rem;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    background: black;
+    color: #fff;
+    padding: 0 0.3rem;
+    transition: all 0.5s ease;
+}
+.product-link2:hover{
+    opacity: 0.9;
+}
+.product-rating2 span{
+    font-weight: 600;
+    color: #252525;
+}
+.product-price2{
+    margin: 1rem 0;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.product-price2 span{
+    font-weight: 400;
+}
+.last-price2 span{
+    color: #f64749;
+    text-decoration: line-through;
+}
+.new-price2 span{
+    color: rgb(0, 175, 175);
+}
+.product-detail2 h2{
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    color: #12263a;
+    padding-bottom: 0.6rem;
+}
+.product-detail2 p{
+    font-size: 0.9rem;
+    padding: 0.3rem;
+    opacity: 0.8;
+}
+.product-detail2 ul{
+    margin: 1rem 0;
+    font-size: 0.9rem;
+}
+.product-detail2 ul li{
+    margin: 0;
+    list-style: none;
+    background: url(../img/compra.png) left center no-repeat;
+    background-size: 18px;
+    padding-left: 1.7rem;
+    margin: 0.4rem 0;
+    font-weight: 600;
+    opacity: 0.9;
+}
+.product-detail2 ul li span{
+    font-weight: 400;
+}
+.purchase-info2{
+    margin: 1rem 0;
+}
+
+@media screen and (min-width: 992px){
+    .card2{
+        display: grid;
+        grid-gap: 1.5rem;
+    }
+    .card-wrapper2{
+        height: 20em;
+        width: 35em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .product-imgs2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .product-content2{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+
+.contenedor-x {
+    z-index: 9999;
+    border-radius: 15px;
+    margin: auto;
+    padding: 1px;
+}
+
+  /* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 70PX;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: aqua;
+    text-decoration: none;
+    cursor: pointer;
+}
